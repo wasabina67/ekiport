@@ -9,8 +9,8 @@ Mark stations and airports with different icons.
 - Icon displays the emoji on a colored circular background
 
 ## Requirements
-1. [ ] Station marker
-2. [ ] Airport marker
+1. [x] Station marker
+2. [x] Airport marker
 
 ### Station marker
 - color: `#4ecdc4`, emoji: 🚉
