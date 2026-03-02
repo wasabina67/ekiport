@@ -1,0 +1,25 @@
+import type { Airport } from '../types'
+
+export const airports: Airport[] = [
+  { id: 'new-chitose', name: 'New Chitose Airport', lat: 42.7752, lng: 141.6921, detail: 'CTS | Hokkaido', cat: 'airport' },
+  { id: 'sendai-airport', name: 'Sendai Airport', lat: 38.1397, lng: 140.9170, detail: 'SDJ | Miyagi', cat: 'airport' },
+  { id: 'narita', name: 'Narita Airport', lat: 35.7647, lng: 140.3864, detail: 'NRT | Chiba', cat: 'airport' },
+  { id: 'haneda', name: 'Haneda Airport', lat: 35.5494, lng: 139.7798, detail: 'HND | Tokyo', cat: 'airport' },
+  { id: 'centrair', name: 'Chubu Centrair International Airport', lat: 34.8584, lng: 136.8054, detail: 'NGO | Aichi', cat: 'airport' },
+  { id: 'itami', name: 'Osaka Itami Airport', lat: 34.7853, lng: 135.4383, detail: 'ITM | Osaka', cat: 'airport' },
+  { id: 'okayama-airport', name: 'Okayama Airport', lat: 34.7569, lng: 133.8548, detail: 'OKJ | Okayama', cat: 'airport' },
+  { id: 'hiroshima-airport', name: 'Hiroshima Airport', lat: 34.4361, lng: 132.9194, detail: 'HIJ | Hiroshima', cat: 'airport' },
+  { id: 'kansai', name: 'Kansai International Airport', lat: 34.4344, lng: 135.2441, detail: 'KIX | Osaka', cat: 'airport' },
+  { id: 'takamatsu', name: 'Takamatsu Airport', lat: 34.2144, lng: 134.0161, detail: 'TAK | Kagawa', cat: 'airport' },
+  { id: 'matsuyama', name: 'Matsuyama Airport', lat: 33.8272, lng: 132.6997, detail: 'MYJ | Ehime', cat: 'airport' },
+  { id: 'fukuoka', name: 'Fukuoka Airport', lat: 33.5858, lng: 130.4511, detail: 'FUK | Fukuoka', cat: 'airport' },
+  { id: 'kochi', name: 'Kochi Airport', lat: 33.5461, lng: 133.6694, detail: 'KCZ | Kochi', cat: 'airport' },
+  { id: 'oita', name: 'Oita Airport', lat: 33.4794, lng: 131.7372, detail: 'OIT | Oita', cat: 'airport' },
+  { id: 'nagasaki-airport', name: 'Nagasaki Airport', lat: 32.9169, lng: 129.9142, detail: 'NGS | Nagasaki', cat: 'airport' },
+  { id: 'kumamoto-airport', name: 'Kumamoto Airport', lat: 32.8373, lng: 130.8554, detail: 'KMJ | Kumamoto', cat: 'airport' },
+  { id: 'miyazaki', name: 'Miyazaki Airport', lat: 31.8772, lng: 131.4486, detail: 'KMI | Miyazaki', cat: 'airport' },
+  { id: 'kagoshima', name: 'Kagoshima Airport', lat: 31.8034, lng: 130.7194, detail: 'KOJ | Kagoshima', cat: 'airport' },
+  { id: 'naha', name: 'Naha Airport', lat: 26.1958, lng: 127.6461, detail: 'OKA | Okinawa', cat: 'airport' },
+  { id: 'miyako', name: 'Miyako Airport', lat: 24.7828, lng: 125.2950, detail: 'MMY | Okinawa', cat: 'airport' },
+  { id: 'ishigaki', name: 'Ishigaki Airport', lat: 24.3967, lng: 124.1861, detail: 'ISG | Okinawa', cat: 'airport' },
+]

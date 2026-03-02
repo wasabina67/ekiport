@@ -4,14 +4,14 @@
 Adding type definitions. Target file is `./src/types/index.ts`.
 
 ## Requirements
-1. [ ] Location
-2. [ ] Station
-3. [ ] Airport
+1. [x] Location
+2. [x] Station
+3. [x] Airport
 
 ### Requirement 1
 
 ```typescript
-type Location = {
+export type Location = {
   id: string
   name: string
   lat: number
@@ -29,7 +29,7 @@ type Location = {
 ### Requirement 2
 
 ```typescript
-type Station = Location & { cat: 'station' }
+export type Station = Location & { cat: 'station' }
 ```
 
 - detail: Main railway company
@@ -38,7 +38,7 @@ type Station = Location & { cat: 'station' }
 ### Requirement 3
 
 ```typescript
-type Airport = Location & { cat: 'airport' }
+export type Airport = Location & { cat: 'airport' }
 ```
 
 - detail: IATA Code | Pref
