@@ -4,8 +4,8 @@
 What to build (1–2 sentences)
 
 ## Requirements
-- [ ] Requirement 1
-- [ ] Requirement 2
+1. [ ] Requirement 1
+2. [ ] Requirement 2
 
 ### Requirement 1
 - Libraries, data structures, component design
