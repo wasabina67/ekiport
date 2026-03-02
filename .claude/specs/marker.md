@@ -3,15 +3,16 @@
 ## Overview
 Mark stations and airports with different icons.
 
-- Station Color: `#4ecdc4`
-- Airport Color: `#f4845f`
-
 ## Requirements
-1. [ ] Requirement 1
-2. [ ] Requirement 2
+1. [ ] Station marker
+2. [ ] Airport marker
 
-### Requirement 1
+### Station marker
+- Use `#4ecdc4` colored icon
+- emoji: 🚉
 - Click the marker to display name and detail (Pop-up)
 
-### Requirement 2
+### Airport marker
+- Use `#f4845f` colored icon
+- emoji: ✈️
 - Click the marker to display name and detail (Pop-up)
