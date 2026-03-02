@@ -13,6 +13,7 @@ An interactive map app displaying major stations and airports within Japan on a 
 
 - Responsive design
 - Supporting both mobile and desktop
+- External library CSS (e.g. Leaflet) should be imported in `main.tsx`, not in individual components
 
 ## Spec-Driven Development
 

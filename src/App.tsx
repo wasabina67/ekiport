@@ -1,17 +1,6 @@
 import './App.css'
+import Map from './components/Map'
 
-function App() {
-  return (
-    <div className="container">
-      <h1 className="title">Vite + React + TypeScript</h1>
-      <p className="description">Minimal template to get started.</p>
-      <div className="features">
-        <span className="badge">Vite</span>
-        <span className="badge">React 19</span>
-        <span className="badge">TypeScript</span>
-      </div>
-    </div>
-  )
+export default function App() {
+  return <Map />
 }
-
-export default App

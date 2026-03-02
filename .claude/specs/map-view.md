@@ -4,7 +4,7 @@
 Display an interactive full-screen map of Japan.
 
 ## Requirements
-1. [ ] Map occupies the full viewport (100vw × 100vh), no margins or padding
+1. [x] Map occupies the full viewport (100vw × 100vh), no margins or padding
 
 ### Requirement 1
 - Use `react-leaflet` `<MapContainer>` with `style={{ width: '100vw', height: '100vh' }}`
