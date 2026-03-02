@@ -18,14 +18,14 @@ An interactive map app displaying major stations and airports within Japan on a 
 ## Spec-Driven Development
 
 Specs are written in `.claude/specs/` as Markdown files.
-Each spec describes a feature's requirements, design, and acceptance criteria.
+Each spec describes what to build and its requirements.
 Claude reads the spec and implements accordingly.
 
 ### Workflow
 
 1. Write a spec in `.claude/specs/<feature-name>.md`
 2. Ask Claude to implement it: "Read `.claude/specs/<feature-name>.md` and implement it"
-3. Claude implements, then marks requirements as done
+3. Claude implements, then marks completed requirements as `[x]`
 
 ### Spec Structure
 
