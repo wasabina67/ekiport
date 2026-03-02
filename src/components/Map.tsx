@@ -1,21 +1,24 @@
-import { useEffect } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { MapContainer, TileLayer, useMap } from 'react-leaflet'
 import L from 'leaflet'
 import 'leaflet.markercluster'
 import { stations } from '../data/stations'
 import { airports } from '../data/airports'
 import { createIcon } from '../utils/createIcon'
+import StatisticsCard from './StatisticsCard'
 import type { Location } from '../types'
 
 const stationIcon = createIcon('#4ecdc4', '🚉')
 const airportIcon = createIcon('#f4845f', '✈️')
 
-function ClusterGroup({ locations, icon, color }: {
+function ClusterGroup({ locations, icon, color, visible }: {
   locations: Location[]
   icon: L.DivIcon
   color: string
+  visible: boolean
 }) {
   const map = useMap()
+  const clusterGroupRef = useRef<L.MarkerClusterGroup | null>(null)
 
   useEffect(() => {
     const clusterGroup = L.markerClusterGroup({
@@ -36,26 +39,53 @@ function ClusterGroup({ locations, icon, color }: {
       clusterGroup.addLayer(marker)
     })
 
+    clusterGroupRef.current = clusterGroup
     map.addLayer(clusterGroup)
-    return () => { map.removeLayer(clusterGroup) }
+    return () => {
+      map.removeLayer(clusterGroup)
+      clusterGroupRef.current = null
+    }
   }, [map, locations, icon, color])
+
+  useEffect(() => {
+    const clusterGroup = clusterGroupRef.current
+    if (!clusterGroup) return
+    if (visible) {
+      map.addLayer(clusterGroup)
+    } else {
+      map.removeLayer(clusterGroup)
+    }
+  }, [visible, map])
 
   return null
 }
 
 export default function Map() {
+  const [stationsVisible, setStationsVisible] = useState(true)
+  const [airportsVisible, setAirportsVisible] = useState(true)
+
   return (
-    <MapContainer
-      center={[36.5, 137.5]}
-      zoom={6}
-      style={{ width: '100vw', height: '100vh' }}
-    >
-      <TileLayer
-        url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-        attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    <>
+      <MapContainer
+        center={[36.5, 137.5]}
+        zoom={6}
+        style={{ width: '100vw', height: '100vh' }}
+      >
+        <TileLayer
+          url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+          attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        />
+        <ClusterGroup locations={stations} icon={stationIcon} color="#4ecdc4" visible={stationsVisible} />
+        <ClusterGroup locations={airports} icon={airportIcon} color="#f4845f" visible={airportsVisible} />
+      </MapContainer>
+      <StatisticsCard
+        stationCount={stations.length}
+        airportCount={airports.length}
+        stationsVisible={stationsVisible}
+        airportsVisible={airportsVisible}
+        onToggleStations={() => setStationsVisible(v => !v)}
+        onToggleAirports={() => setAirportsVisible(v => !v)}
       />
-      <ClusterGroup locations={stations} icon={stationIcon} color="#4ecdc4" />
-      <ClusterGroup locations={airports} icon={airportIcon} color="#f4845f" />
-    </MapContainer>
+    </>
   )
 }

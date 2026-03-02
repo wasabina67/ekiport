@@ -6,13 +6,13 @@ Display in the lower left corner of the screen.
 Click the label text to toggle marker visibility on the map.
 
 ## Requirements
-1. [ ] Statistics display
-2. [ ] Toggle visibility
+1. [x] Statistics display
+2. [x] Toggle visibility
 
 ### Statistics display
 - Position: lower left corner of the map
-- Show station count: e.g. `Station - 20`
-- Show airport count: e.g. `Airport - 21`
+- Show station count: e.g. `🚉 - 20`
+- Show airport count: e.g. `✈️ - 21`
 
 ### Toggle visibility
 - Click the station label to show/hide station markers
