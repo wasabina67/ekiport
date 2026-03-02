@@ -4,6 +4,16 @@
 
 An interactive map app displaying major stations and airports within Japan on a map.
 
+## Tech Stack
+
+- Map library: Leaflet, react-leaflet
+- Clustering: Leaflet.markercluster
+
+## UI Design
+
+- Responsive design
+- Supporting both mobile and desktop
+
 ## Spec-Driven Development
 
 Specs are written in `.claude/specs/` as Markdown files.
