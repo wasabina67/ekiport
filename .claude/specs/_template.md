@@ -7,5 +7,8 @@ What to build (1–2 sentences)
 - [ ] Requirement 1
 - [ ] Requirement 2
 
-## Implementation Details
+### Requirement 1
+- Libraries, data structures, component design
+
+### Requirement 2
 - Libraries, data structures, component design
