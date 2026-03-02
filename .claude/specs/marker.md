@@ -3,16 +3,19 @@
 ## Overview
 Mark stations and airports with different icons.
 
+## Icon
+- Use Leaflet `divIcon`
+- Shared `createIcon(color, emoji)` function for generating icons
+- Icon displays the emoji on a colored circular background
+
 ## Requirements
 1. [ ] Station marker
 2. [ ] Airport marker
 
 ### Station marker
-- Use `#4ecdc4` colored icon
-- emoji: 🚉
+- color: `#4ecdc4`, emoji: 🚉
 - Click the marker to display name and detail (Pop-up)
 
 ### Airport marker
-- Use `#f4845f` colored icon
-- emoji: ✈️
+- color: `#f4845f`, emoji: ✈️
 - Click the marker to display name and detail (Pop-up)
