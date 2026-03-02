@@ -11,7 +11,7 @@ Mark stations and airports with different icons.
 2. [ ] Requirement 2
 
 ### Requirement 1
-- Libraries, data structures, component design
+- Click the marker to display name and detail (Pop-up)
 
 ### Requirement 2
-- Libraries, data structures, component design
+- Click the marker to display name and detail (Pop-up)
