@@ -4,8 +4,8 @@
 Cluster station and airport markers separately using `leaflet.markercluster`.
 
 ## Requirements
-1. [ ] Station cluster group
-2. [ ] Airport cluster group
+1. [x] Station cluster group
+2. [x] Airport cluster group
 
 ### Station cluster group
 - Use `MarkerClusterGroup` for stations
