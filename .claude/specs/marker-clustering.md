@@ -1,14 +1,16 @@
 # Marker Clustering
 
 ## Overview
-The station and airport are separate and should be clustered.
+Cluster station and airport markers separately using `leaflet.markercluster`.
 
 ## Requirements
-1. [ ] Requirement 1
-2. [ ] Requirement 2
+1. [ ] Station cluster group
+2. [ ] Airport cluster group
 
-### Requirement 1
-- Libraries, data structures, component design
+### Station cluster group
+- Use `MarkerClusterGroup` for stations
+- Cluster color: `#4ecdc4`
 
-### Requirement 2
-- Libraries, data structures, component design
+### Airport cluster group
+- Use `MarkerClusterGroup` for airports
+- Cluster color: `#f4845f`
